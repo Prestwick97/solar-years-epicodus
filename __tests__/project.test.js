@@ -34,8 +34,10 @@ describe('jupitermarsDif', () => {
 
 describe('planetaryAge', () => {
   test('should correctly provide age on jupiter with inputted earth age', () => {
-    let planetaryYears = new PlanetaryYears();
-    expect(planetaryYears.planetaryAge()).toEqual();
+    let planetaryYears = new PlanetaryYears(22);
+    planetaryYears.mercuryDif();
+    planetaryYears.planetaryAge()
+    expect(planetaryYears.planetAge).toEqual(91.66666666666667);
   })
 })
 
@@ -49,7 +51,7 @@ describe('planetaryExpectancy', () => {
 describe('expectancyRemainder', () => {
   test('should correctly produce the remainder of a lifespan on a planet', () => {
     let planetaryYears = new PlanetaryYears();
-    expect(planetaryYears.ExpectancyRemainder()).toEqual(number);
+    expect(planetaryYears.ExpectancyRemainder()).toEqual();
   })
 })
 // describe('', () => {

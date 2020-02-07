@@ -13,6 +13,9 @@ export class PlanetaryYears {
   planetaryEcpectancy() {
     this.planetExpectancy = this.lifeExpectancy / this.planetDif; 
   }
+  ExpectancyRemainder() {
+    this.planetAge - this.planetExpectancy; 
+  }
   mercuryDif() {
     this.planetDif = 0.24;
   }
@@ -25,4 +28,5 @@ export class PlanetaryYears {
   jupiterDif() {
     this.planetDif = 11.86;
   }
+
 };
