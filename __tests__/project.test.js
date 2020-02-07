@@ -10,6 +10,6 @@ describe('mercuryAge', () => {
 describe('venusAge', () => {
   test('should correctly provide age on venus with inputted earth age', () => {
     let planetaryYears = new PlanetaryYears();
-    expect(planetaryYears.venusAge()).toEqual(50)
+    expect(planetaryYears.venusAge()).toEqual()
   })
 })
