@@ -10,4 +10,7 @@ export class PlanetaryYears {
   venusAge() {
     this.planetAge = this.earthAge/0.62;
   }
+  marseAge() {
+    this.planetAge = this.eathAge/1.88;
+  }
 };
