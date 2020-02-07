@@ -44,7 +44,10 @@ describe('planetaryAge', () => {
 describe('planetaryExpectancy', () => {
   test('should correctly provide life expectancy on other planets', () => {
     let planetaryYears = new PlanetaryYears();
-    expect(planetaryYears.planetaryEcpectancy()).toEqual();
+    planetaryYears.mercuryDif();
+    planetaryYears.lifeExpectancy = 80;
+    planetaryYears.planetaryEcpectancy();
+    expect(planetaryYears.planetExpectancy).toEqual(333.33333333333337);
   })
 })
 
