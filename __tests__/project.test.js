@@ -20,3 +20,10 @@ describe('marsAge', () => {
     expect(planetaryYears.marsAge()).toEqual();
   })
 })
+
+describe('jupiterAge', () => {
+  test('should correctly provide age on jupiter with inputted earth age', () => {
+    let planetaryYears = new PlanetaryYears();
+    expect(planetaryYears.jupiterAge()).toEqual(12);
+  })
+})
