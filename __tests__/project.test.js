@@ -42,10 +42,16 @@ describe('planetaryAge', () => {
 describe('planetaryExpectancy', () => {
   test('should correctly provide life expectancy on other planets', () => {
     let planetaryYears = new PlanetaryYears();
-    expect(planetaryYears.planetaryEcpectancy).toEqual(23);
+    expect(planetaryYears.planetaryEcpectancy()).toEqual();
   })
 })
 
+describe('expectancyRemainder', () => {
+  test('should correctly produce the remainder of a lifespan on a planet', () => {
+    let planetaryYears = new PlanetaryYears();
+    expect(planetaryYears.ExpectancyRemainder()).toEqual(number);
+  })
+})
 // describe('', () => {
 //   test('should correctly', () => {
 //     let planetaryYears = new PlanetaryYears();
