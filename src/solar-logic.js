@@ -11,6 +11,9 @@ export class PlanetaryYears {
     this.planetAge = this.earthAge/0.62;
   }
   marsAge() {
-    this.planetAge = this.eathAge/1.88;
+    this.planetAge = this.earthAge/1.88;
+  }
+  jupiterAge() {
+    this.planetAge = this.earthAge/11.86;
   }
 };
