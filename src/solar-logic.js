@@ -1,8 +1,9 @@
 // Business Logic
 export class PlanetaryYears {
-  constructor(earthAge, planetAge) {
+  constructor(earthAge, planetAge, lifeExpectancy) {
     this.earthAge = earthAge;
     this.planetAge = planetAge;
+    this.lifeExpectancy = lifeExpectancy;
   }
   mercuryAge() {
     this.planetAge = this.earthAge/0.24;
@@ -16,4 +17,5 @@ export class PlanetaryYears {
   jupiterAge() {
     this.planetAge = this.earthAge/11.86;
   }
+
 };
