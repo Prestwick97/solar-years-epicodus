@@ -1,13 +1,13 @@
 // Business Logic
 class PlanetaryYears {
-  constructor(earthAge, mercuryYears, venusYears, marsYears, jupiter) {
+  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge) {
     this.earthAge = earthAge;
-    this.mercuryYears = mercuryYears;
-    this.venusYears = venusYears;
-    this.marsYears = marsYears;
-    this.jupiterYears = jupiterYears;
+    this.mercuryAge = mercuryAge;
+    this.venusAge = venusAge;
+    this.marsAge = marsAge;
+    this.jupiterAge = jupiterAge;
   }
-  mercuryAge() {
-    ea
+  mercuryYears() {
+    this.mercuryAge = this.earthAge / 0.24
   }
 }
