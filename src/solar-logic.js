@@ -5,6 +5,9 @@ export class PlanetaryYears {
     this.planetAge = planetAge;
   }
   mercuryAge() {
-    this.planetAge = this.earthAge/0.24
+    this.planetAge = this.earthAge/0.24;
+  }
+  venusAge() {
+    this.planetAge = this.earthAge/0.62;
   }
 };
