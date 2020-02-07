@@ -1,14 +1,16 @@
+specs:
+User inputs their age, and the program returns what their age would be in Mercury years.
+* input: Earth age: 22,
+* output: Mercury age: 91.6
 
-```                                       
-   _   
-  |_  |                               | | / /     | |      | ___ \       | |     | |  
-    | | ___ _ __ ___ _ __ ___  _   _  | |/ /  __ _| | ___  | |_/ __ _  __| | ___ | |_ 
-    | |/ _ | '__/ _ | '_ ` _ \| | | | |    \ / _` | |/ _ \ |  __/ _` |/ _` |/ _ \| __|
-/\__/ |  __| | |  __| | | | | | |_| | | |\  | (_| | |  __/ | | | (_| | (_| | (_) | |_ 
-\____/ \___|_|  \___|_| |_| |_|\__, | \_| \_/\__,_|_|\___| \_|  \__,_|\__,_|\___/ \__|
-                                __/ |                                                 
-                               |___/    
-```
+User inputs their age, and the program returns what their age would be in Venus years.
+* input: age: 22,
+* output: Venus age: 35.5
 
+User inputs their age, and the program returns what their age would be in Mars years.
+* input: age: 22,
+* output: Mars age: 11.7
 
-
+User inputs their age, and the program returns what their age would be in Jupiter years.
+* input: age: 22,
+* output: Jupiter age: 1.85
