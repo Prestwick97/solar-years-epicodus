@@ -22,3 +22,46 @@ User inputs their life expectancy based on their demographic and recieves hpw ma
 If user has already passed their average life expectancy, program will output the number of years they have lived past their life expectancy.
 * input: life expectancy: 80 years; age: 100 years,
 * output: 20 years
+
+# _Galactic Solar Calculator_
+
+#### _A program that shows you how your age is percieved through the lens of other planetary bodies. Febuary 7th, 2020_
+
+#### By _**{Patrick Delaney}**_
+
+## Description
+
+_The Galactic Solar Calculator is a program that allows users to input their age and life expectancy. The program outputs the users age as percieved through the lens of four other planetay bodies, as well as the time they have left to live on said planetary bodies._
+
+## Setup/Installation Requirements
+
+* _Open your command terminal._
+* _Navigate to your desktop directory using the command: "cd desktop". Press enter._
+* _Type in the following command: "git clone https://github.com/Prestwick97/solar-years-epicodus.git". Press enter._
+* _No user interface yet, but soon! For now, enjoy the code._
+<!-- * _Input the following command: "cd solar-years". Press enter._
+* _Input the following command: "open src/index.html". Press enter._ -->
+
+## Known Bugs
+
+So far, there are no known bugs.
+
+## Support and contact details
+
+_Please direct any questions, comments, suggestions, or concerns to Patrick Delaney at prestwick97@gmail.com_
+
+## Technologies Used
+
+* HTML 5
+* Javascript
+* Jquery
+* CSS
+* Bootstrap
+* Node Project Manager
+* Jest Testing
+
+### License
+
+MIT
+
+Copyright (c) 2020 **_Patrick Delaney_**

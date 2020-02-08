@@ -68,7 +68,7 @@ describe('calculateMercury', () => {
     planetaryYears.earthAge = 22;
     planetaryYears.lifeExpectancy = 80;
     calculateMercury();
-    expect(planetaryYears.planetAge).toEqual(78);
+    expect(planetaryYears.planetExpectancy).toEqual();
   })
 })
 // describe('', () => {
