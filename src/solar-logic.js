@@ -31,11 +31,12 @@ export class PlanetaryYears {
   }
 };
 
-function calculateMercury() {
-PlanetaryYears.mercuryDif();
-PlanetaryYears.planetaryAge();
-PlanetaryYears.planetaryExpectancy();
-PlanetaryYears.ExpectancyRemainder();
+export function calculateMercury() {
+  let planetaryYears = new PlanetaryYears();
+  planetaryYears.mercuryDif();
+  planetaryYears.planetaryAge();
+  planetaryYears.planetaryExpectancy();
+  planetaryYears.ExpectancyRemainder();
 }
 function calculateVenus() {
   PlanetaryYears.venusDif();

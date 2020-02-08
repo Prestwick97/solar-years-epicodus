@@ -1,4 +1,5 @@
 import { PlanetaryYears } from "./../src/solar-logic"
+import { calculateMercury } from "./../src/solar-logic"
 
 describe('mercuryAge', () => {
   test('should correctly provide planetary "year" differentiation', () => {
@@ -58,6 +59,16 @@ describe('expectancyRemainder', () => {
     planetaryYears.planetExpectancy = 80; 
     planetaryYears.ExpectancyRemainder();
     expect(planetaryYears.planetRemainder).toEqual(60);
+  })
+})
+
+describe('calculateMercury', () => {
+  test('should correctly calculate planetary age, life expectancy, and life expectancy remainder for the planet of mercury', () => {
+    let planetaryYears = new PlanetaryYears();
+    planetaryYears.earthAge = 22;
+    planetaryYears.lifeExpectancy = 80;
+    calculateMercury();
+    expect(planetaryYears.planetAge).toEqual(78);
   })
 })
 // describe('', () => {
