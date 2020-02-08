@@ -29,5 +29,29 @@ export class PlanetaryYears {
   jupiterDif() {
     this.planetDif = 11.86;
   }
-
 };
+
+function calculateMercury() {
+PlanetaryYears.mercuryDif();
+PlanetaryYears.planetaryAge();
+PlanetaryYears.planetaryExpectancy();
+PlanetaryYears.ExpectancyRemainder();
+}
+function calculateVenus() {
+  PlanetaryYears.venusDif();
+  PlanetaryYears.planetaryAge();
+  PlanetaryYears.planetaryExpectancy();
+  PlanetaryYears.ExpectancyRemainder();
+  }
+function calculateMars() {
+PlanetaryYears.marsDif();
+PlanetaryYears.planetaryAge();
+PlanetaryYears.planetaryExpectancy();
+PlanetaryYears.ExpectancyRemainder();
+}
+function calculateJupiter() {
+  PlanetaryYears.JupiterDif();
+  PlanetaryYears.planetaryAge();
+  PlanetaryYears.planetaryExpectancy();
+  PlanetaryYears.ExpectancyRemainder();
+  }
