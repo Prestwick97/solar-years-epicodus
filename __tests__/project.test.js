@@ -46,7 +46,7 @@ describe('planetaryExpectancy', () => {
     let planetaryYears = new PlanetaryYears();
     planetaryYears.mercuryDif();
     planetaryYears.lifeExpectancy = 80;
-    planetaryYears.planetaryEcpectancy();
+    planetaryYears.planetaryExpectancy();
     expect(planetaryYears.planetExpectancy).toEqual(333.33333333333337);
   })
 })
@@ -54,7 +54,10 @@ describe('planetaryExpectancy', () => {
 describe('expectancyRemainder', () => {
   test('should correctly produce the remainder of a lifespan on a planet', () => {
     let planetaryYears = new PlanetaryYears();
-    expect(planetaryYears.ExpectancyRemainder()).toEqual();
+    planetaryYears.planetAge = 20;
+    planetaryYears.planetExpectancy = 80; 
+    planetaryYears.ExpectancyRemainder();
+    expect(planetaryYears.planetRemainder).toEqual(60);
   })
 })
 // describe('', () => {

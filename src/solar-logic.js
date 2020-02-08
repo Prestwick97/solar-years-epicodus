@@ -1,20 +1,21 @@
 // Business Logic
 export class PlanetaryYears {
-  constructor(earthAge, planetAge, planetDif, lifeExpectancy, planetExpectancy) {
+  constructor(earthAge, planetAge, planetDif, lifeExpectancy, planetExpectancy, planetRemainder) {
     this.earthAge = earthAge;
     this.planetAge = planetAge;
     this.planetDif = planetDif;
     this.planetExpectancy = planetExpectancy;
     this.lifeExpectancy = lifeExpectancy;
+    this.planetRemainder = planetRemainder;
   }
   planetaryAge() {
     this.planetAge = this.earthAge / this.planetDif;
   }
-  planetaryEcpectancy() {
+  planetaryExpectancy() {
     this.planetExpectancy = this.lifeExpectancy / this.planetDif; 
   }
   ExpectancyRemainder() {
-    this.planetAge - this.planetExpectancy; 
+    this.planetRemainder = this.planetExpectancy - this.planetAge; 
   }
   mercuryDif() {
     this.planetDif = 0.24;
