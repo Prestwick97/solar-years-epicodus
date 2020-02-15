@@ -1,4 +1,16 @@
-specs:
+
+# _Galactic Solar Calculator_
+
+#### _A program that shows you how your age is percieved through the lens of other planetary bodies. Febuary 7th, 2020_
+
+#### By _**Patrick Delaney**_
+
+## Description
+
+_The Galactic Solar Calculator is a program that allows users to input their age and life expectancy. The program outputs the users age as percieved through the lens of four other planetay bodies, as well as the time they have left to live on said planetary bodies._
+
+## Specs:
+
 User inputs their age, and the program returns what their age would be in Mercury years.
 * input: Earth age: 22,
 * output: Mercury age: 91.6
@@ -15,23 +27,14 @@ User inputs their age, and the program returns what their age would be in Jupite
 * input: age: 22,
 * output: Jupiter age: 1.85
 
-User inputs their life expectancy based on their demographic and recieves hpw many years they hav eleft to live on each planet.
+User inputs their life expectancy based on their demographic and recieves how many years they have left to live on each planet.
 * input: life expectancy: 80 years,
-* output: Mercury years, Venus years, Mars years, Jupiter years.
+* output: 19.2 Mercury years, 49.6 Venus years, 150.4 Mars years, 948.8 Jupiter years.
 
-If user has already passed their average life expectancy, program will output the number of years they have lived past their life expectancy.
-* input: life expectancy: 80 years; age: 100 years,
-* output: 20 years
+If user has already passed their average life expectancy, program will output the number of years they have lived past their life expectancy in relation to the time differential for each planet.
+* input: Earth life expectancy: 80 years; age: 100 years,
+* output: 4.8 Mercury years, 10.4 Venus years, 37.6 Mars years, 227.2 Jupiter years
 
-# _Galactic Solar Calculator_
-
-#### _A program that shows you how your age is percieved through the lens of other planetary bodies. Febuary 7th, 2020_
-
-#### By _**{Patrick Delaney}**_
-
-## Description
-
-_The Galactic Solar Calculator is a program that allows users to input their age and life expectancy. The program outputs the users age as percieved through the lens of four other planetay bodies, as well as the time they have left to live on said planetary bodies._
 
 ## Setup/Installation Requirements
 

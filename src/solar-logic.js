@@ -1,12 +1,16 @@
 // Business Logic
 export class PlanetaryYears {
-  constructor(earthAge, planetAge, planetDif, lifeExpectancy, planetExpectancy, planetRemainder) {
+  constructor(earthAge, lifeExpectancy,) {
     this.earthAge = earthAge;
     this.planetAge = planetAge;
     this.planetDif = planetDif;
     this.planetExpectancy = planetExpectancy;
     this.lifeExpectancy = lifeExpectancy;
     this.planetRemainder = planetRemainder;
+    this.mercuryDif = 0.24;
+    this.venusDif = 0.62;
+    this.marsDif = 1.88;
+    jupiterDif = 11.86;
   }
   planetaryAge() {
     this.planetAge = this.earthAge / this.planetDif;
@@ -17,42 +21,27 @@ export class PlanetaryYears {
   ExpectancyRemainder() {
     this.planetRemainder = this.planetExpectancy - this.planetAge; 
   }
-  mercuryDif() {
-    this.planetDif = 0.24;
+  calculateMercury() {
+    let planetaryYears = new PlanetaryYears();
+    planetaryYears.planetaryAge();
+    planetaryYears.planetaryExpectancy();
+    planetaryYears.ExpectancyRemainder();
   }
-  venusDif() {
-    this.planetDif = 0.62;
+  calculateVenus() {
+    PlanetaryYears.planetaryAge();
+    PlanetaryYears.planetaryExpectancy();
+    PlanetaryYears.ExpectancyRemainder();
   }
-  marsDif() {
-    this.planetDif = 1.88;
+  calculateMars() {
+  PlanetaryYears.planetaryAge();
+  PlanetaryYears.planetaryExpectancy();
+  PlanetaryYears.ExpectancyRemainder();
   }
-  jupiterDif() {
-    this.planetDif = 11.86;
+  calculateJupiter() {
+    PlanetaryYears.planetaryAge();
+    PlanetaryYears.planetaryExpectancy();
+    PlanetaryYears.ExpectancyRemainder();
   }
 };
 
-export function calculateMercury() {
-  let planetaryYears = new PlanetaryYears();
-  planetaryYears.mercuryDif();
-  planetaryYears.planetaryAge();
-  planetaryYears.planetaryExpectancy();
-  planetaryYears.ExpectancyRemainder();
-}
-function calculateVenus() {
-  PlanetaryYears.venusDif();
-  PlanetaryYears.planetaryAge();
-  PlanetaryYears.planetaryExpectancy();
-  PlanetaryYears.ExpectancyRemainder();
-  }
-function calculateMars() {
-PlanetaryYears.marsDif();
-PlanetaryYears.planetaryAge();
-PlanetaryYears.planetaryExpectancy();
-PlanetaryYears.ExpectancyRemainder();
-}
-function calculateJupiter() {
-  PlanetaryYears.JupiterDif();
-  PlanetaryYears.planetaryAge();
-  PlanetaryYears.planetaryExpectancy();
-  PlanetaryYears.ExpectancyRemainder();
-  }
+
