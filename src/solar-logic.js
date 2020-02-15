@@ -12,9 +12,18 @@ export class PlanetaryYears {
     // this.marsDif = 1.88;
     // this.jupiterDif = 11.86;
   }
-  planetaryAge() {
-    this.planetAge = this.earthAge / this.planetDif;
+  mercuryAge() {
+    this.planetAge = this.earthAge / this.planetDif[0];
   }
+  venusAge() {
+    this.planetAge = this.earthAge / this.planetdif[1];
+  }
+  marsAge() {
+    this.planetAge = this.earthAge / this.planetdif[2];
+  }
+  jupiterAge() {
+    this.planetAge = this.earthAge / this.planetdif[3];
+  } 
   planetaryExpectancy() {
     this.planetExpectancy = this.lifeExpectancy / this.planetDif; 
   }
