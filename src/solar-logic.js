@@ -3,14 +3,14 @@ export class PlanetaryYears {
   constructor(earthAge, lifeExpectancy,) {
     this.earthAge = earthAge;
     this.planetAge = planetAge;
-    this.planetDif = planetDif;
+    this.planetDif = [0.24, 0.62, 1.88, 11.86];
     this.planetExpectancy = planetExpectancy;
     this.lifeExpectancy = lifeExpectancy;
     this.planetRemainder = planetRemainder;
-    this.mercuryDif = 0.24;
-    this.venusDif = 0.62;
-    this.marsDif = 1.88;
-    jupiterDif = 11.86;
+    // this.mercuryDif = 0.24;
+    // this.venusDif = 0.62;
+    // this.marsDif = 1.88;
+    // this.jupiterDif = 11.86;
   }
   planetaryAge() {
     this.planetAge = this.earthAge / this.planetDif;
@@ -22,7 +22,6 @@ export class PlanetaryYears {
     this.planetRemainder = this.planetExpectancy - this.planetAge; 
   }
   calculateMercury() {
-    let planetaryYears = new PlanetaryYears();
     planetaryYears.planetaryAge();
     planetaryYears.planetaryExpectancy();
     planetaryYears.ExpectancyRemainder();
