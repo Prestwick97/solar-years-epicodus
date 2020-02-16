@@ -21,7 +21,7 @@ describe('planetaryYears', () => {
     planetaryYears.mercuryAge();
     planetaryYears.mercuryExpectancy();
     planetaryYears.expectancyRemainder();
-    expect(planetaryYears.planetExcess).toEqual(8765);
+    expect(planetaryYears.planetExcess).toEqual(62.5);
   })
   // test('', () => {
 
