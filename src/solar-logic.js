@@ -30,9 +30,9 @@ export class PlanetaryYears {
     this.planetExpectancy = this.lifeExpectancy / this.planetDif[3]; 
   }
   expectancyRemainder() {
-    if(this.planetExpectancy < this.planetAge){
-      let planetExcess = this.planetAge - this.planetExpectancy;
-      return "Congratulations! You've servived" + planetExcess + "years past your life expectancy on this planet!";
+    if(this.planetAge > this.planetExpectancy){
+      this.planetExcess = this.planetAge - this.planetExpectancy;
+      // return "Congratulations! You've servived" + this.planetExcess + "years past your life expectancy on this planet!";
     } else {
       this.planetRemainder = this.planetExpectancy - this.planetAge;
     }

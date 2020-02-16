@@ -14,24 +14,15 @@ describe('planetaryYears', () => {
     planetaryYears.expectancyRemainder();
     planetaryYears.mercuryAge();
     planetaryYears.mercuryExpectancy();
-    expect(planetaryYears.planetRemainder).toEqual( 241.66666666666669);
+    expect(planetaryYears.planetRemainder).toEqual(241.66666666666669);
   })
-  // test('', () => {
-
-  //   expect().toEqual();
-  // })
-  // test('', () => {
-
-  //   expect().toEqual();
-  // })
-  // test('', () => {
-
-  //   expect().toEqual();
-  // })
-  // test('', () => {
-
-  //   expect().toEqual();
-  // })
+  test('Should correctly calculate the time someone has left to live on another planet, assuming their age is less than their life expectancy.', () => {
+    let planetaryYears = new PlanetaryYears(95, 80);
+    planetaryYears.mercuryAge();
+    planetaryYears.mercuryExpectancy();
+    planetaryYears.expectancyRemainder();
+    expect(planetaryYears.planetExcess).toEqual(8765);
+  })
   // test('', () => {
 
   //   expect().toEqual();
