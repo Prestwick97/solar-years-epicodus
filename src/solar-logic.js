@@ -19,6 +19,11 @@ export class PlanetaryYears {
       this.planetRemainder = this.planetExpectancy - this.planetAge;
     }
   }
+  calculatePlanet(difNum) {
+    this.planetAge(difNum);
+    this.planetExpectancy(difNum);
+    this.expectancyRemainder();
+  }
 };
 
 

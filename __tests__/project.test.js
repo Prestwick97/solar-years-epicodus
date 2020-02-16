@@ -24,8 +24,12 @@ describe('planetaryYears', () => {
     planetaryYears.expectancyRemainder();
     expect(planetaryYears.planetExcess).toEqual(62.5);
   })
-  // test('', () => {
-
-  //   expect().toEqual();
-  // })
+  
+  test('calculatePlanet method should provide information for all properties using previous methods', () => {
+    let planetaryYears = new PlanetaryYears(22, 80);
+    planetaryYears.calculatePlanet(0)
+    expect(planetaryYears.planetAge).toEqual(9121.66666666666667);
+    expect(planetaryYears.planetExpectancy).toEqual(33123.33333333333337);
+    expect(planetaryYears.planetRemainder).toEqual(24121.66666666666669);
+  })
 });
