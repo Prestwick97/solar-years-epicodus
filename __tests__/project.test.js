@@ -8,7 +8,7 @@ describe('planetaryYears', () => {
   })
   test('Should provide life expectancy based on the differential of another planet.', () => {
     planetaryYears.mercuryExpectancy();
-    expect(planetaryYears.planetExpectancy).toEqual();
+    expect(planetaryYears.planetExpectancy).toEqual(333.33333333333337);
   })
   // test('', () => {
     
