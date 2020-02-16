@@ -10,10 +10,12 @@ describe('planetaryYears', () => {
     planetaryYears.mercuryExpectancy();
     expect(planetaryYears.planetExpectancy).toEqual(333.33333333333337);
   })
-  // test('', () => {
-    
-  //   expect().toEqual();
-  // })
+  test('Should correctly calculate the time someone has left to live on another planet, assuming their age is less than their life expectancy.', () => {
+    planetaryYears.expectancyRemainder();
+    planetaryYears.mercuryAge();
+    planetaryYears.mercuryExpectancy();
+    expect(planetaryYears.planetRemainder).toEqual();
+  })
   // test('', () => {
 
   //   expect().toEqual();
