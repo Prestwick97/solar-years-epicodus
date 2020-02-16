@@ -1,16 +1,9 @@
 // Business Logic
 export class PlanetaryYears {
-  constructor(earthAge, lifeExpectancy,) {
+  constructor(earthAge, lifeExpectancy) {
     this.earthAge = earthAge;
-    this.planetAge = planetAge;
-    this.planetDif = [0.24, 0.62, 1.88, 11.86];
-    this.planetExpectancy = planetExpectancy;
     this.lifeExpectancy = lifeExpectancy;
-    this.planetRemainder = planetRemainder;
-    // this.mercuryDif = 0.24;
-    // this.venusDif = 0.62;
-    // this.marsDif = 1.88;
-    // this.jupiterDif = 11.86;
+    this.planetDif = [0.24, 0.62, 1.88, 11.86];
   }
   mercuryAge() {
     this.planetAge = this.earthAge / this.planetDif[0];
@@ -24,32 +17,47 @@ export class PlanetaryYears {
   jupiterAge() {
     this.planetAge = this.earthAge / this.planetdif[3];
   } 
-  planetaryExpectancy() {
-    this.planetExpectancy = this.lifeExpectancy / this.planetDif; 
+  mercuryExpectancy() {
+    this.planetExpectancy = this.lifeExpectancy / this.planetDif[0]; 
   }
-  ExpectancyRemainder() {
-    this.planetRemainder = this.planetExpectancy - this.planetAge; 
+  venusExpectancy() {
+    this.planetExpectancy = this.lifeExpectancy / this.planetDif[1]; 
   }
-  calculateMercury() {
-    planetaryYears.planetaryAge();
-    planetaryYears.planetaryExpectancy();
-    planetaryYears.ExpectancyRemainder();
+  marsExpectancy() {
+    this.planetExpectancy = this.lifeExpectancy / this.planetDif[2]; 
   }
-  calculateVenus() {
-    PlanetaryYears.planetaryAge();
-    PlanetaryYears.planetaryExpectancy();
-    PlanetaryYears.ExpectancyRemainder();
+  jupiterExpectancy() {
+    this.planetExpectancy = this.lifeExpectancy / this.planetDif[3]; 
   }
-  calculateMars() {
-  PlanetaryYears.planetaryAge();
-  PlanetaryYears.planetaryExpectancy();
-  PlanetaryYears.ExpectancyRemainder();
+  expectancyRemainder() {
+    if(this.planetExpectancy < this.planetAge){
+      let planetExcess = this.planetAge - this.planetExpectancy;
+      return "Congratulations! You've servived" + planetExcess + "years past your life expectancy on this planet!";
+    } else {
+      this.planetRemainder = this.planetExpectancy - this.planetAge;
+    }
   }
-  calculateJupiter() {
-    PlanetaryYears.planetaryAge();
-    PlanetaryYears.planetaryExpectancy();
-    PlanetaryYears.ExpectancyRemainder();
-  }
+
+  // calculateMercury() {
+  //   planetaryYears.planetaryAge();
+  //   planetaryYears.planetaryExpectancy();
+  //   planetaryYears.ExpectancyRemainder();
+  // }
+  // calculateVenus() {
+  //   PlanetaryYears.planetaryAge();
+  //   PlanetaryYears.planetaryExpectancy();
+  //   PlanetaryYears.ExpectancyRemainder();
+  // }
+  // calculateMars() {
+  // PlanetaryYears.planetaryAge();
+  // PlanetaryYears.planetaryExpectancy();
+  // PlanetaryYears.ExpectancyRemainder();
+  // }
+  // calculateJupiter() {
+  //   PlanetaryYears.planetaryAge();
+  //   PlanetaryYears.planetaryExpectancy();
+  //   PlanetaryYears.ExpectancyRemainder();
+  // }
 };
 
 
